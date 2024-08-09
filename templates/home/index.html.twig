@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-5">
+
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <input aria-label="Rechercher"
+                               class="form-control"
+                               hx-get="{{ path('search.index') }}"
+                               hx-target="#searchResults"
+                               name="query"
+                               placeholder="Rechercher..."
+                               type="search"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="searchResults"></div>
+
+    </div>
+{% endblock %}

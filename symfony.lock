@@ -13,6 +13,18 @@
             "src/Repository/.gitignore"
         ]
     },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "src/DataFixtures/AppFixtures.php"
+        ]
+    },
     "doctrine/doctrine-migrations-bundle": {
         "version": "3.3",
         "recipe": {
@@ -24,6 +36,30 @@
         "files": [
             "config/packages/doctrine_migrations.yaml",
             "migrations/.gitignore"
+        ]
+    },
+    "meilisearch/search-bundle": {
+        "version": "0.15",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "0.10",
+            "ref": "f0730f97441a5391832fb176305f69abe86b70a3"
+        },
+        "files": [
+            "config/packages/meilisearch.yaml"
+        ]
+    },
+    "php-http/discovery": {
+        "version": "1.19",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.18",
+            "ref": "f45b5dd173a27873ab19f5e3180b2f661c21de02"
+        },
+        "files": [
+            "config/packages/http_discovery.yaml"
         ]
     },
     "phpunit/phpunit": {
@@ -278,5 +314,17 @@
     },
     "twig/extra-bundle": {
         "version": "v3.11.0"
+    },
+    "zenstruck/foundry": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.10",
+            "ref": "37c2f894cc098ab4c08874b80cccc8e2f8de7976"
+        },
+        "files": [
+            "config/packages/zenstruck_foundry.yaml"
+        ]
     }
 }
